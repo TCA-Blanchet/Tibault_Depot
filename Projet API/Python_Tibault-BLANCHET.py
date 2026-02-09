@@ -6,6 +6,8 @@ import pip._vendor.requests as requests
 import moviepy
 from moviepy.editor import *
 from datetime import datetime
+import shutil as shutil
+
 
 def Creation_vidéo (nbImages, dossier_images, script_dir):
     # Demander à l'utilisateur le nombre d'images souhaité
@@ -29,9 +31,13 @@ def Creation_vidéo (nbImages, dossier_images, script_dir):
 script_dir = os.path.dirname(os.path.abspath(__file__))
 print(script_dir)
 
+
+
 # Créer dossier (s'il n'existe pas) pour sauvegarder les images
 dossier_images = os.path.join(script_dir, "images_picsum")
-if os.path.exists(dossier_images) == False :
+if os.path.exists(dossier_images) == True :
+    shutil.rmtree(dossier_images)
+else: 
     os.makedirs(dossier_images)
 
 # Créer dossier (s'il n'existe pas) pour sauvegarder les images
