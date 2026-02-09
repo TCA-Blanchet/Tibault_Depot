@@ -56,7 +56,12 @@ server <- function(input, output) {
          xlab = 'Pourcentage de victoire',
          main = 'victoire')
     })
+    
     output$tab <- renderDataTable({
+      candy_tab <- candy[,11:13]
+    })
+    
+    output$iamge <- renderImage({
       candy_tab <- candy[,11:13]
     })
 }
