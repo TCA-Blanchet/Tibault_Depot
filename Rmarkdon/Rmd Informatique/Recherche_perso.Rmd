@@ -1,0 +1,77 @@
+---
+title: "Rapport recherche personnel"
+author: "BLANCHET Tibault"
+date: "`r format(Sys.time(), '%d %B %Y')`"
+output:
+  pdf_document:
+    toc: true
+    toc_depth: '3'
+    extra_dependencies: ["float"]
+  html_document:
+    code_folding: hide
+    fig_caption: true
+    number_sections: true
+    toc: true
+    toc_depth: 3
+    toc_float:
+      collapsed: true
+      smooth_scroll: true
+  word_document:
+    toc: true
+    toc_depth: '3'
+bibliography: biblio/informatique.bib
+csl: "biblio/isara-iso-690.csl"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(knitr)
+```
+
+
+# Problèmatique
+Quesque le Cloud et les NAS? Ont-t-ils un intéret pour le grand-public ? Quelles solutions sont disponibles sur le marché ?
+
+
+# Définitions
+Un peu de définition “Le terme « cloud » désigne les serveurs accessibles sur Internet, ainsi que les logiciels et bases de données qui fonctionnent sur ces serveurs.” (@cloudflare_quest-ce_nodate) 
+
+“Un système de NAS (Network Attached Storage) est un dispositif de stockage de grande capacité connecté à un réseau qui permet aux utilisateurs et aux clients autorisés du réseau de stocker et de récupérer des données à partir d’un emplacement centralisé.” (@hpe_quest-ce_nodate)
+
+# Présentation Générale
+Le Cloud et les NAS ont pour point commun la mise a disposition de données aux travers d'une connection internet. Ils permettent de gérer l'accès a ses données au cas par cas selon l'utilisateur. Cependant la notion de NAS est l'un des sous-ensemble de possibilité qu'offre les solutions Clouds. 
+
+## Le Cloud
+Le Cloud fonctionne sur la base de la virtualisation, ce qui veut dire qu'un serveur physique peut regrouper différents produits, solutions, entreprises, clients... en ne faisant apparaître à l'utilisateur que la ou les parties qui le concernant.
+Les services de type cloud se divisent en 4 catégories en fonction des besoins des entreprises. 
+
+```{r logo, echo=FALSE, fig.pos="H", out.width = '100%', fig.align = "center", fig.cap="Modèles de services Cloud  (cloudflare [sans date])"}
+knitr::include_graphics("Cloud_type.png")
+```
+
+La première est un Cloud privé géré en interne sur site qui s'apparente aux solutions NAS que l'on abordera ensuite. 
+Ensuite il y a l'IaaS pour Infrastructure-as-a-Service dans ce cas, le client loue uniquement l'infrasture physique du serveur et doit par lui même installer ses logiciels, géré ses accès, la troisième est PaaS pour Platform-as-a-Service dans ce cas-là l'entreprise en plus de la location du matériel physique, les composants logiciels qui permettent de la création de ses logiciels. Enfin la dernière solution, SaaS pour Software-as-a-Service où le client loue le matériel avec le logiciel simultanéement. 
+
+La grande différence entre les services est le contrôle de l'entreprise sur le système en effet, elle peut-être propriétaire ou locataire et ce à des niveaux différents selon ses besoins et nécéssités.
+
+
+## Les NAS
+La notion de Cloud et de NAS sont fortement interconnectés pour les utilisations personnelles, en effet il s’agit d’une solution de stockage d’information à forte capacité disponible à distance par l’utilisateur. 
+
+Un appareil NAS fonctionne sur tout type de plateforme ou de système d’exploitation. Il s’agit essentiellement d’un ensemble de composants matériels et logiciels doté d’un système d’exploitation intégré lui permettant de fonctionner de manière indépendante. Il consiste souvent en une simple combinaison réunissant une carte d’interface réseau (NIC), un contrôleur de stockage, un certain nombre de baies de disques et un bloc d’alimentation. Les appareils NAS contiennent deux à cinq disques durs qui assurent une redondance et un accès rapide aux fichiers. Si le NAS est souvent considéré comme un mini-serveur, son contrôleur ne gère que les disques destinés au stockage et ne fonctionne pas comme un serveur.
+
+En bref, un appareil NAS est une appliance qui se connecte directement au réseau soit par un une liaison Ethernet câblée (RJ45), soit par Wi-Fi, créant ainsi un LAN au lieu d’un WAN. Une adresse IP lui est attribuée, et le transfert de données entre les utilisateurs, les serveurs et un NAS se fait via TCP/IP. Le NAS fonctionne avec un système de fichiers traditionnel, soit un système de fichiers de nouvelle technologie (NTFS) ou NFS pour les services de fichiers à distance et le partage des données. Tout l’espace de stockage
+disponible sur l’appareil est accessible au niveau fichier via un partage de fichiers.
+Les appareils NAS fournissent un stockage partagé sous forme de volumes montés en réseau et utilisent des protocoles tels que NFS et SMB/CIFS. Lorsqu’il est utilisé pour le stockage partagé, l’appareil NAS relie plusieurs serveurs à un dispositif de stockage commun. Ces « clusters » sont souvent utilisés pour le basculement grâce à un volume partagé en cluster permettant à tous les nœuds du cluster d’accéder aux mêmes données.
+
+# Conclusion
+L’utilisation d’une solution de Cloud personnel est un ejeux majeur pour la souveraineté de ses données personnelles ainsi que du facteur économique. Cependant cela requière un investissement en temps et en argent afin de trouver, mettre en place et maintenir cette solution de stockage dans le temps.
+
+
+## Liens
+
+ISARA : <https://isaranet.fr/> consulté le ...
+
+# Bibliographie
+
+Liste des publications :
