@@ -60,7 +60,7 @@ La notion de Cloud et de NAS sont fortement interconnectés pour les utilisation
 
 Un appareil NAS pour Network Attached Storage est un ordinateur composé de plusieurs unités de stockage majoritairement composé de HDD. Cette ordinateur va acceuillir un système d'exploitation specialement dédié pour la gestion de fichiers avec une interface web afin d'y accéder à distance. 
 
-La majorité des systèmes se basent sur une distribution linux, on notera différentes options disponibles sur le marché : True NAS Community Edition, OpenMediaVault, XigmaNAS et Rockstor... Ces solutions possèdent des caractéristiques communes avec une interface graphique pour gérer son matériel, la possibilité de mettre en place des protections contre la panne avec des modes RAID...
+La majorité des systèmes se basent sur une distribution linux, on notera différentes options disponibles sur le marché : True NAS Community Edition, OpenMediaVault, XigmaNAS et Rockstor... Ces solutions possèdent des caractéristiques communes avec une interface graphique pour gérer son matériel, la possibilité de mettre en place des protections contre la panne avec des modes RAID... (@nas_quel_2023)
 
 
 # Conclusion
